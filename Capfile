@@ -41,4 +41,5 @@ Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 
 require 'capistrano/rvm'
 require 'capistrano/puma'
+require 'capistrano/secrets_yml'
 install_plugin Capistrano::Puma

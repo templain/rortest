@@ -67,5 +67,6 @@ group :development do
   gem 'capistrano', '~> 3.10', require: false
   gem 'capistrano-rvm'
   gem 'capistrano3-puma', '~> 3.1.1'
+  gem 'capistrano-secrets-yml'
   gem 'net-ssh'
 end
