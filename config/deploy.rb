@@ -1,8 +1,10 @@
-# config valid for current version and patch releases of Capistrano
-lock "~> 3.11.0"
+# frozen_string_literal: true
 
-set :application, "rortest"
-set :repo_url, "https://github.com/templain/rortest.git"
+# config valid for current version and patch releases of Capistrano
+lock '~> 3.11.0'
+
+set :application, 'rortest'
+set :repo_url, 'https://github.com/templain/rortest.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

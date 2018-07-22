@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -7,7 +9,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-server "192.168.1.123", user: "vagrant", roles: %w{app db web}
+server '192.168.1.123', user: 'vagrant', roles: %w[app db web]
 
 # role-based syntax
 # ==================
@@ -21,8 +23,6 @@ server "192.168.1.123", user: "vagrant", roles: %w{app db web}
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-
-
 # Configuration
 # =============
 # You can set any configuration variable like in config/deploy.rb
@@ -31,8 +31,6 @@ server "192.168.1.123", user: "vagrant", roles: %w{app db web}
 # http://capistranorb.com/documentation/getting-started/configuration/
 # Feel free to add new variables to customise your setup.
 
-
-
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
@@ -40,10 +38,9 @@ server "192.168.1.123", user: "vagrant", roles: %w{app db web}
 # http://net-ssh.github.io/net-ssh/classes/Net/SSH.html#method-c-start
 #
 # Global options
-set :ssh_options, {
-  port: 22,
-  keys: %w(/keys/id_rsa_ruby),
-}
+set :ssh_options,
+    port: 22,
+    keys: %w[/keys/id_rsa_ruby]
 # --------------
 #  set :ssh_options, {
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
